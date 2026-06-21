@@ -131,7 +131,7 @@ st.markdown("""
 
 st.title("EE200: Audio Fingerprinting")
 st.markdown("<p style='color: #6b7280; font-size: 0.9rem; letter-spacing: 1px;'>SIGNALS, SYSTEMS & NETWORKS - PROJECT DEMO</p>", unsafe_allow_html=True)
-st.markdown("<p style='color: #9ca3af; margin-bottom: 30px;'>Index a library of songs as spectrogram fingerprints, then identify any short clip against it.</p>", unsafe_allow_html=True)
+st.markdown("<p style='color: #9ca3af; margin-bottom: 30px;'>Identify any music short clip using spectrogram analysis and time offset hashing.</p>", unsafe_allow_html=True)
 
 
 @st.cache_resource
@@ -165,7 +165,7 @@ tab1, tab2, tab3 = st.tabs(["● LIBRARY", "◎ IDENTIFY", "▦ BATCH"])
 # TAB 1: LIBRARY (Grid View w/ Images)
 # ==========================================
 with tab1:
-    st.markdown("<div style='text-align: center; padding: 40px; background-color: #111827; border-radius: 8px; margin-bottom: 20px;'><h4 style='color: #9ca3af; font-weight: normal;'>Song indexing is managed by the admin.<br>Drop a clip in the Identify tab to test the library.</h4></div>", unsafe_allow_html=True)
+    st.markdown("<div style='text-align: center; padding: 40px; background-color: #111827; border-radius: 8px; margin-bottom: 20px;'><h4 style='color: #9ca3af; font-weight: normal;'>50 songs in database. <br>Drop a clip in the Identify tab to test the library.</h4></div>", unsafe_allow_html=True)
     st.markdown("<h5 style='color: #6b7280; text-transform: uppercase; letter-spacing: 1px;'>In the Database</h5>", unsafe_allow_html=True)
     
     if not song_summary:
@@ -376,7 +376,7 @@ with tab2:
 with tab3:
     st.markdown("<h5 style='color: #6b7280; text-transform: uppercase; letter-spacing: 1px; margin-top: 10px;'>Batch</h5>", unsafe_allow_html=True)
     st.markdown("### Identify many clips at once")
-    st.markdown("<p style='color: #9ca3af; font-size: 0.9rem;'>Upload a set of query clips. Each is identified against the currently indexed library, and the results are written to a standardised <code>results.csv</code> with columns <code>filename, prediction</code>. The prediction is the matched track's filename without its extension, or <code>None</code> when no candidate clears the confidence threshold.</p>", unsafe_allow_html=True)
+    st.markdown("<p style='color: #9ca3af; font-size: 0.9rem;'>Upload a set of query clips. Each is identified against the currently indexed library, and the results are written to a standardised <code>results.csv</code> with columns <code>filename, prediction</code>. The prediction is the matched track's filename without any extrension, or <code>None</code> when no candidate clears the confidence threshold.</p>", unsafe_allow_html=True)
     
     uploaded_files = st.file_uploader("Upload Query Clips", type=['wav', 'mp3'], accept_multiple_files=True, label_visibility="collapsed")
     
