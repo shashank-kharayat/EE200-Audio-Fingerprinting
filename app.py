@@ -130,7 +130,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.title("EE200: Audio Fingerprinting")
-st.markdown("<p style='color: #6b7280; font-size: 0.9rem; letter-spacing: 1px;'>Made by SHASHANK KHARAYAT</p>", unsafe_allow_html=True)
+st.markdown("<p style='color: #6b7280; font-size: 0.9rem; letter-spacing: 1px;'>CREATED BY SHASHANK KHARAYAT</p>", unsafe_allow_html=True)
 st.markdown("<p style='color: #9ca3af; margin-bottom: 30px;'>Identify any music clip from an indexed database using spectrogram analysis and time offset hashing.</p>", unsafe_allow_html=True)
 
 
@@ -183,7 +183,7 @@ with tab1:
                         # Load from the Constellation_Images folder as requested
                         img_path = os.path.join("Constellation_Images", f"{song_name}.png")
                         
-                        st.markdown(f"<div style='background-color: #0b1117; padding: 15px; border-radius: 8px; margin-bottom: 15px; border: 1px solid #1f2937;'>", unsafe_allow_html=True)
+                        st.markdown(f"<div style='background-color: #0b1117; padding: 15px; border-radius: 8px; margin-bottom: 15px; border: 1px solid #0b1117;'>", unsafe_allow_html=True)
                         if os.path.exists(img_path):
                             image = Image.open(img_path)
                             st.image(image, use_container_width=True)
