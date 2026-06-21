@@ -1,0 +1,15 @@
+# Ignore audio clip datasets and test folders
+*.mp3
+*.wav
+.ipynb_checkpoints/
+Altered_Clips/
+Test_Clips/
+EE200 Project Song Database/
+# Ignore temporary outputs and logs
+results.csv
+robust_match_results.csv
+Shahsnak_3.ipynb
+match_results.csv
+single_peak_database_EE200.pkl
+robust_cqt_database.pkl
+__pycache__/
