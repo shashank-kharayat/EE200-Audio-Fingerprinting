@@ -1,7 +1,7 @@
 librosa==0.10.2
-numpy==1.26.4; platform_system != 'Windows' or platform_machine == 'AMD64'
-matplotlib==3.8.4
-scipy==1.13.0
-pandas==2.2.2
-streamlit==1.33.0
-Pillow==10.2.0
+numpy
+matplotlib
+scipy
+pandas
+streamlit
+Pillow
